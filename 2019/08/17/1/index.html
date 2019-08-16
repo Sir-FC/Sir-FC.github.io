@@ -55,17 +55,17 @@
   };
 </script>
 
-  <meta name="description" content="1234567890.">
+  <meta name="description" content="上一篇抱怨说字数统计搞不出来，然后写完我就去解决了【←迫真行动派　　网上找到的教程都是 tm 不知道哪个版本的了，插件还是hexo-wordcount，然而 next v6.3 用的插件是hexo-symbols-count-time，所以按老板方法设置是完全没有用的……　　顺带提一句，国内各种教程贴里流传的 next 主题 git 仓库地址也已经停止维护了，如果你要提交 issue 就会看到提示">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1">
 <meta property="og:url" content="http://yoursite.com/2019/08/17/1/index.html">
 <meta property="og:site_name" content="Wen&#39;s">
-<meta property="og:description" content="1234567890.">
+<meta property="og:description" content="上一篇抱怨说字数统计搞不出来，然后写完我就去解决了【←迫真行动派　　网上找到的教程都是 tm 不知道哪个版本的了，插件还是hexo-wordcount，然而 next v6.3 用的插件是hexo-symbols-count-time，所以按老板方法设置是完全没有用的……　　顺带提一句，国内各种教程贴里流传的 next 主题 git 仓库地址也已经停止维护了，如果你要提交 issue 就会看到提示">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-16T19:14:59.679Z">
+<meta property="og:updated_time" content="2019-08-16T19:21:06.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1">
-<meta name="twitter:description" content="1234567890.">
+<meta name="twitter:description" content="上一篇抱怨说字数统计搞不出来，然后写完我就去解决了【←迫真行动派　　网上找到的教程都是 tm 不知道哪个版本的了，插件还是hexo-wordcount，然而 next v6.3 用的插件是hexo-symbols-count-time，所以按老板方法设置是完全没有用的……　　顺带提一句，国内各种教程贴里流传的 next 主题 git 仓库地址也已经停止维护了，如果你要提交 issue 就会看到提示">
   <link rel="canonical" href="http://yoursite.com/2019/08/17/1/">
 
 
@@ -234,7 +234,7 @@
                 
               
 
-              <time title="创建时间：2019-08-17 02:26:15 / 修改时间：03:14:59" itemprop="dateCreated datePublished" datetime="2019-08-17T02:26:15+08:00">2019-08-17</time>
+              <time title="创建时间：2019-08-17 02:26:15 / 修改时间：03:21:06" itemprop="dateCreated datePublished" datetime="2019-08-17T02:26:15+08:00">2019-08-17</time>
             </span>
           
             
@@ -266,7 +266,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>1234567890.</p>
+        <p>上一篇抱怨说字数统计搞不出来，然后写完我就去解决了【←迫真行动派</p><p>　　网上找到的教程都是 tm 不知道哪个版本的了，插件还是hexo-wordcount，然而 next v6.3 用的插件是hexo-symbols-count-time，所以按老板方法设置是完全没有用的……<br>　　顺带提一句，国内各种教程贴里流传的 next 主题 git 仓库地址也已经停止维护了，如果你要提交 issue 就会看到提示信息告诉你这个项目已经整合到 hexo theme 仓库底下，新的仓库地址是这个：</p><a id="more"></a>
+
+<p><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a><br>　　首先第一步，卸掉你在史前教程里装的hexo-wordcount插件！<br>　　在命令行里输入↓<br>npm uninstall hexo-wordcount<br>　　uninstall 命令可能有简写形式吧但是我不知道所以老老实实拼整个词了<br>　　我的废话怎么这么多啊难怪开博 3 天字数就 2w5 了呜呜呜<br>　　然后安装新插件hexo-symbols-xount-time【symbol 这个单词真的是在我的打字盲区，很痛恨了 好了你不要再废话了！！<br>　　在命令行里输入↓<br>npm i hexo-symbols-count-time –save<br>　　i 就是 install 的简写！</p>
+<p>　　然后有两个地方需要修改：一个是你 hexo 文件夹下的配置文件_config.yml，另一个是你主题文件夹里的同名文件。<br>　　首先是你 hexo 文件夹下的配置文件，拉到最后添加如下代码：</p>
+<p>symbols_count_time:<br>    symbols: true<br>    time: true<br>    total_symbols: true<br>    total_time: true<br>　　然后是主题文件夹里的配置文件，NexT 主题其实已经自带了相关代码，搜索wordcount或者插件名可以看到如下代码：</p>
+<h1 id="Post-wordcount-display-settings"><a href="#Post-wordcount-display-settings" class="headerlink" title="Post wordcount display settings"></a>Post wordcount display settings</h1><h1 id="Dependencies-https-github-com-theme-next-hexo-symbols-count-time"><a href="#Dependencies-https-github-com-theme-next-hexo-symbols-count-time" class="headerlink" title="Dependencies: https://github.com/theme-next/hexo-symbols-count-time"></a>Dependencies: <a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">https://github.com/theme-next/hexo-symbols-count-time</a></h1><p>symbols_count_time:<br>  separated_meta: true<br>  item_text_post: true<br>  item_text_total: false<br>  awl: 4<br>  wpm: 275<br>　　其中awl（Average Word Length）的数值是设定多少字符统计为一个字（word），中文博客需要设置为 2。<br>　　wpm（Words Per Minute）是你的阅读速度，多少字（word）统计为阅读时长一分钟。以下是官方文档里的一些阅读速度参考数据：</p>
+<p>慢速：200<br>中速：275（默认）<br>快速：350<br>　　还有给中文用户的贴心提示：因为在中文中一个词语的平均长度在 1.5 字左右，所以一般建议设置为awl=2，wpm=300。<br>　　附上原文：</p>
+<p>Note for Chinese users: because in Chinese language average word length about ~1.5 and if you at most cases write posts in Chinese (without mixed English), recommended to set awl to 2 and wpm to 300.<br>But if you usualy mix your posts with English, awl to 4 and wpm to 275 will be nice.<br>　　所以你为什么不直接用中文写这条提示啊</p>
+<p>　　然后注意_config.yml文件里的更改一般是不能直接作用在本地浏览里的，请先 ctrl+C 终止预览，再hexo clean→hexo s –debug重新开一遍，不出意外你的文章标题底下就会有和本站一样的字数统计了，末尾的版权信息里也会出现全站字数统计。<br>　　如果出现了意外，请前往官方 github 仓库反馈，地址↓</p>
+<p><a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">https://github.com/theme-next/hexo-symbols-count-time</a><br>　　 注意：请务必用英文发 issue！<br>　　将心比心一下，你是愿意看见 “这个插件是正常实行做不到了” 呢，还是 “このプラグインは正常に実行ができません” 呢？显然前者你还能猜一下到底什么意思，但后面这个你压根读都读不出来( ´_&gt;` )<br>　　日文对中文用户还比较友好了，知道是肯定句还是否定句形式起码能把句子里的汉字挑出来猜一下，英文用户看中文的感想，大概就是把上面那句日文全部换成片假名吧Σ(´∀｀；)<br>　　那么这次的感想就分享到这里！</p>
 
     </div>
 
@@ -346,8 +355,17 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -393,6 +411,23 @@
 
         </div>
       </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Post-wordcount-display-settings"><span class="nav-number">1.</span> <span class="nav-text">Post wordcount display settings</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dependencies-https-github-com-theme-next-hexo-symbols-count-time"><span class="nav-number">2.</span> <span class="nav-text">Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
         <div class="back-to-top motion-element">
           <i class="fa fa-arrow-up"></i>
           

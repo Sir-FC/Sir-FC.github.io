@@ -1949,7 +1949,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff8b;
+  background: #34ffaf;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3158,4 +3158,8 @@ header.post-header {
   .post-body {
     text-align: justify;
   }
+}
+#wechat:hover p,
+#alipay:hover p {
+  animation: none;
 }

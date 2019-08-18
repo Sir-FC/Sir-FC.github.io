@@ -6,6 +6,8 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
+<script type="text/javascript" src="//mat1.gtimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -818,5 +820,27 @@
 
   
 
+<script src="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+<div id="aplayer"></div> 
+<script language="JavaScript"> 
+var music = new Array(); 
+$.ajax({ 
+type: "GET", 
+url: 'https://api.mlwei.com/music/api/wy/?key=523077333&cache=0&type=songlist&id=2943554716',//歌单API接口 
+dataType: 'json', 
+success: function(result){ 
+var ap = new APlayer({ 
+element: document.getElementById('aplayer'),  
+volume: 0.2,//音量，100% 
+mutex: true,//互斥打开，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器 
+fixed: true,//吸底模式，就是本站左下角播放器样式 
+theme: '#45B6F7',//播放器主题色 
+autoplay: false,//自动播放打开，关闭改成 false 
+order: 'random',//顺序播放，随机播放改成random 
+audio: result.Body 
+}); 
+} 
+}); 
+</script> 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":10,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
 </html>

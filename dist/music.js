@@ -4,10 +4,10 @@ const ap = new APlayer({
     autoplay: false,
     audio: [
       {
-        name: '风筝误',
-        artist: '刘珂矣',
-        url: 'https://up.mcyt.net/?down/46644.mp3',
-        cover: 'https://oeff2vktt.bkt.clouddn.com/image/96.jpg',
+        name: '小城故事',
+        artist: '邓丽君,
+        url: 'http://www.ytmp3.cn/down/56704.mp3',
+        cover: 'http://pic.xiami.net/images/album/img83/1483/4591621365228685.jpg',
       }
     ]
 });

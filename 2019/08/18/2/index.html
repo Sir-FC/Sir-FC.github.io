@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Wen&#39;s Blog">
 <meta property="og:description" content="额滴神呀！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-18T06:29:49.019Z">
+<meta property="og:updated_time" content="2019-08-22T07:53:35.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大雨002：看板喵设置">
 <meta name="twitter:description" content="额滴神呀！">
@@ -358,7 +358,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  330 字
+                  322 字
                 </span>
               
 
@@ -400,6 +400,8 @@
 
 <ul>
 <li><h2 id="缩进，缩进，缩进！！！重要的事情说三遍。"><a href="#缩进，缩进，缩进！！！重要的事情说三遍。" class="headerlink" title="缩进，缩进，缩进！！！重要的事情说三遍。"></a>缩进，缩进，缩进！！！重要的事情说三遍。</h2><hr>
+</li>
+</ul>
 <h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><ul>
 <li><h3 id="以黑猫“hijiki”为例，在根目录按顺序执行以下指令："><a href="#以黑猫“hijiki”为例，在根目录按顺序执行以下指令：" class="headerlink" title="以黑猫“hijiki”为例，在根目录按顺序执行以下指令："></a>以黑猫“hijiki”为例，在根目录按顺序执行以下指令：</h3><blockquote>
 <p>npm install hexo-helper-live2d –save</p>
@@ -409,18 +411,8 @@
 </ul>
 <h2 id="2-配置"><a href="#2-配置" class="headerlink" title="2.配置"></a>2.配置</h2><ul>
 <li><h3 id="安装完上述指令后，打开站点配置文件。在文末添加以下内容："><a href="#安装完上述指令后，打开站点配置文件。在文末添加以下内容：" class="headerlink" title="安装完上述指令后，打开站点配置文件。在文末添加以下内容："></a>安装完上述指令后，打开站点配置文件。在文末添加以下内容：</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Live2D</span></span><br><span class="line"><span class="comment">## https://github.com/EYHN/hexo-helper-live2d</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># enable: false</span></span><br><span class="line"><span class="attr">  scriptFrom:</span> <span class="string">local</span> <span class="comment"># 默认</span></span><br><span class="line"><span class="attr">  pluginRootPath:</span> <span class="string">live2dw/</span> <span class="comment"># 插件在站点上的根目录(相对路径)</span></span><br><span class="line"><span class="attr">  pluginJsPath:</span> <span class="string">lib/</span> <span class="comment"># 脚本文件相对与插件根目录路径</span></span><br><span class="line"><span class="attr">  pluginModelPath:</span> <span class="string">assets/</span> <span class="comment"># 模型文件相对与插件根目录路径</span></span><br><span class="line">  <span class="comment"># scriptFrom: jsdelivr # jsdelivr CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: unpkg # unpkg CDN</span></span><br><span class="line">  <span class="comment"># scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url</span></span><br><span class="line"><span class="attr">  tagMode:</span> <span class="literal">false</span> <span class="comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span></span><br><span class="line"><span class="attr">  debug:</span> <span class="literal">false</span> <span class="comment"># 调试, 是否在控制台输出日志</span></span><br><span class="line"><span class="attr">  model:</span></span><br><span class="line"><span class="attr">    use:</span> <span class="string">live2d-widget-model-hijiki</span> <span class="comment"># npm-module package name</span></span><br><span class="line">    <span class="comment"># use: wanko # 博客根目录/live2d_models/ 下的目录名</span></span><br><span class="line">    <span class="comment"># use: ./wives/wanko # 相对于博客根目录的路径</span></span><br><span class="line">    <span class="comment"># use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url</span></span><br><span class="line"><span class="attr">    scale:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">    hHeadPos:</span> <span class="number">0.5</span></span><br><span class="line"><span class="attr">    vHeadPos:</span> <span class="number">0.618</span></span><br><span class="line"><span class="attr">  display:</span></span><br><span class="line"><span class="attr">    superSample:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">    width:</span> <span class="number">150</span></span><br><span class="line"><span class="attr">    height:</span> <span class="number">300</span></span><br><span class="line"><span class="attr">    position:</span> <span class="string">left</span></span><br><span class="line"><span class="attr">    hOffset:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">    vOffset:</span> <span class="bullet">-20</span></span><br><span class="line"><span class="attr">  mobile:</span></span><br><span class="line"><span class="attr">    show:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    scale:</span> <span class="number">0.5</span></span><br><span class="line"><span class="attr">  react:</span></span><br><span class="line"><span class="attr">    opacityDefault:</span> <span class="number">0.7</span></span><br><span class="line"><span class="attr">    opacityOnHover:</span> <span class="number">0.2</span></span><br></pre></td></tr></table></figure>
-
-
-
 </li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><h3 id="保存文件后，执行以下指令即可："><a href="#保存文件后，执行以下指令即可：" class="headerlink" title="保存文件后，执行以下指令即可："></a>保存文件后，执行以下指令即可：</h3><blockquote>
-<p>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
-</blockquote>
-</li>
+<li><h3 id="保存文件后，重新生成即可查看效果"><a href="#保存文件后，重新生成即可查看效果" class="headerlink" title="保存文件后，重新生成即可查看效果"></a>保存文件后，重新生成即可查看效果</h3></li>
 </ul>
 
       
@@ -568,7 +560,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -614,7 +606,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缩进，缩进，缩进！！！重要的事情说三遍。"><span class="nav-number">1.</span> <span class="nav-text">缩进，缩进，缩进！！！重要的事情说三遍。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装"><span class="nav-number">2.</span> <span class="nav-text">1.安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#以黑猫“hijiki”为例，在根目录按顺序执行以下指令："><span class="nav-number">2.1.</span> <span class="nav-text">以黑猫“hijiki”为例，在根目录按顺序执行以下指令：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置"><span class="nav-number">3.</span> <span class="nav-text">2.配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装完上述指令后，打开站点配置文件。在文末添加以下内容："><span class="nav-number">3.1.</span> <span class="nav-text">安装完上述指令后，打开站点配置文件。在文末添加以下内容：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保存文件后，执行以下指令即可："><span class="nav-number">3.2.</span> <span class="nav-text">保存文件后，执行以下指令即可：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缩进，缩进，缩进！！！重要的事情说三遍。"><span class="nav-number">1.</span> <span class="nav-text">缩进，缩进，缩进！！！重要的事情说三遍。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装"><span class="nav-number">2.</span> <span class="nav-text">1.安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#以黑猫“hijiki”为例，在根目录按顺序执行以下指令："><span class="nav-number">2.1.</span> <span class="nav-text">以黑猫“hijiki”为例，在根目录按顺序执行以下指令：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置"><span class="nav-number">3.</span> <span class="nav-text">2.配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装完上述指令后，打开站点配置文件。在文末添加以下内容："><span class="nav-number">3.1.</span> <span class="nav-text">安装完上述指令后，打开站点配置文件。在文末添加以下内容：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保存文件后，重新生成即可查看效果"><span class="nav-number">3.2.</span> <span class="nav-text">保存文件后，重新生成即可查看效果</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -655,7 +647,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.4k</span>
+    <span title="Site words total count">2k</span>
   
 </div>
 
@@ -1162,75 +1154,5 @@
   
 
   
-  <style>
-    .copy-btn {
-      display: inline-block;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #333;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      background-color: #eee;
-      background-image: linear-gradient(#fcfcfc, #eee);
-      border: 1px solid #d5d5d5;
-      border-radius: 3px;
-      user-select: none;
-      outline: 0;
-    }
-
-    .highlight-wrap .copy-btn {
-      transition: opacity .3s ease-in-out;
-      opacity: 0;
-      padding: 2px 6px;
-      position: absolute;
-      right: 4px;
-      top: 8px;
-    }
-
-    .highlight-wrap:hover .copy-btn,
-    .highlight-wrap .copy-btn:focus {
-      opacity: 1
-    }
-
-    .highlight-wrap {
-      position: relative;
-    }
-  </style>
-  
-  <script>
-    $('.highlight').each(function (i, e) {
-      var $wrap = $('<div>').addClass('highlight-wrap')
-      $(e).after($wrap)
-      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
-        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
-          return $(e).text()
-        }).toArray().join('\n')
-        var ta = document.createElement('textarea')
-        document.body.appendChild(ta)
-        ta.style.position = 'absolute'
-        ta.style.top = '0px'
-        ta.style.left = '0px'
-        ta.value = code
-        ta.select()
-        ta.focus()
-        var result = document.execCommand('copy')
-        document.body.removeChild(ta)
-        
-          if(result)$(this).text('复制成功')
-          else $(this).text('复制失败')
-        
-        $(this).blur()
-      })).on('mouseleave', function (e) {
-        var $b = $(this).find('.copy-btn')
-        setTimeout(function () {
-          $b.text('复制')
-        }, 300)
-      }).append(e)
-    })
-  </script>
-
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":10,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
 </html>

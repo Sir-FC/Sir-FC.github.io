@@ -357,7 +357,7 @@
 
           
             <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-eye" aria-hidden="true"></i> 阅读数
+            <span class="page-pv"><i class="fa fa-eye" aria-hidden="true"></i> 本文总阅读量
             <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
             </span>
           
@@ -666,6 +666,33 @@
     <i class="fa fa-battery-full" aria-hidden="true"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">方钟Sir</span>
+  
+<span> | <i class="fa fa-tree" aria-hidden="true"></i> 本站已默默运行<span id="showDays"></span></span>    
+<script>
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2019,08,15,17,27,14); // 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById('showDays').innerHTML=""+diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒";
+  }, 1000);
+</script>
 
   
     <span class="post-meta-divider">|</span>
@@ -695,33 +722,6 @@
 
 
 
-
-<div id="days"></div>
-<script>
-function show_date_time(){
-    window.setTimeout("show_date_time()", 1000);
-    BirthDay=new Date("08/15/2019 17:27:14");//修改为自己的blog建站时间
-    today=new Date();
-    timeold=(today.getTime()-BirthDay.getTime());
-    sectimeold=timeold/1000
-    secondsold=Math.floor(sectimeold);
-    msPerDay=24*60*60*1000
-    e_daysold=timeold/msPerDay
-    daysold=Math.floor(e_daysold);
-    e_hrsold=(e_daysold-daysold)*24;
-    hrsold=setzero(Math.floor(e_hrsold));
-    e_minsold=(e_hrsold-hrsold)*60;
-    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
-    seconds=setzero(Math.floor((e_minsold-minsold)*60));
-    document.getElementById('days').innerHTML="<i class="fa fa-shield" aria-hidden="true"></i> 本站已安全运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
-}
-function setzero(i){
-    if (i<10)
-    {i="0" + i};
-    return i;
-}
-show_date_time();
-</script>
         
 <div class="busuanzi-count">
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -730,7 +730,7 @@ show_date_time();
     <span class="site-uv">
       <i class="fa fa-user" aria-hidden="true"></i> 本站访客数
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      人
+      人次
     </span>
   
 

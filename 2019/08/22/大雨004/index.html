@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="Wen&#39;s Blog">
 <meta property="og:description" content="伊講情人欲愛無勇氣 才來用字騙情義">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-23T15:56:29.164Z">
+<meta property="og:updated_time" content="2019-08-23T16:02:15.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大雨004：代码块复制功能">
 <meta name="twitter:description" content="伊講情人欲愛無勇氣 才來用字騙情義">
@@ -481,7 +481,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/大雨004/">大雨004：代码块复制功能</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 方钟Sir 的个人博客">方钟Sir</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 15:06</p>
-  <p><span>最后更新:</span>2019年08月23日 - 23:56</p>
+  <p><span>最后更新:</span>2019年08月24日 - 00:02</p>
   <p><span>原始链接:</span><a href="/2019/08/22/大雨004/" title="大雨004：代码块复制功能">https://sirfc.life/2019/08/22/大雨004/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://sirfc.life/2019/08/22/大雨004/" aria-label="复制成功！"></i></span>
   </p>
@@ -936,27 +936,20 @@
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script src="/js/src/Valine.min.js"></script>
   
   <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
     new Valine({
+        lang: 'zh-cn',
+        admin_email: '3165099438@qq.com',
         el: '#comments' ,
-        verify: false,
-        notify: false,
         appId: 'NsVu1xWqP2yy0a5D5wMvkIHl-MdYXbMMI',
         appKey: 'ldvAXr7TAROzcsEXGYijMCQy',
+        emoticon_url: 'https://cloud.panjunwen.com/alu',
+        emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
         placeholder: '久闻公之大名，今日有幸相会！',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
+  });
   </script>
-
 
 
   
